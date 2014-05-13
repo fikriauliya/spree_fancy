@@ -7,11 +7,9 @@
     <div id="featured-products" class="row">
       <h3>Featured Products</h3>
       <hr>
-      <ul class="carousel">
-        <% @featured_products.each do |product| %>
-          <%= render 'product', :product => product %>
-        <% end %>
-      </ul>
+      <% @featured_products.each do |product| %>
+        <%= render 'product', :product => product %>
+      <% end %>
     </div>
   <% end %>
 
@@ -19,11 +17,9 @@
     <div id="latest-products" class="row">
       <h3>Latest Products</h3>
       <hr>
-      <ul class="carousel">
-        <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
-          <%= render 'product', :product => product %>
-        <% end %>
-      </ul>
+      <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
+        <%= render 'product', :product => product %>
+      <% end %>
     </div>
   <% end %>
 </div>
