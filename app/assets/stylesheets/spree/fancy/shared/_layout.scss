@@ -35,15 +35,15 @@ body {
 }
 
 #latest-products {
-  h3 { color: $c_orange }
-  hr { border-bottom-color: lighten($c_orange, 40) }
+  h3 { color: $c_blue }
+  hr { border-bottom-color: lighten($c_blue, 30) }
 
-  .product-image a { border-color: lighten($c_orange, 40) }
-  .product-name { color: $c_orange !important; }
+  .product-image a { border-color: lighten($c_blue, 30) }
+  .product-name { color: $c_blue !important; }
 
   .bx-pager.bx-default-pager a.active,
   .bx-pager.bx-default-pager a:hover {
-    background-color: $c_orange !important;
+    background-color: $c_blue !important;
   }
 }
 
@@ -52,6 +52,7 @@ body {
   hr { border-bottom-color: lighten($c_blue, 30) }
 
   .product-image a { border-color: lighten($c_blue, 30) }
+  .product-name { color: $c_blue !important; }
 
   .bx-pager.bx-default-pager a.active,
   .bx-pager.bx-default-pager a:hover {
