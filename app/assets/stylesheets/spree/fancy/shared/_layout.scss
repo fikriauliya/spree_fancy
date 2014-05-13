@@ -97,8 +97,8 @@ body {
 
   .product-image {
     a {
-      @include border-radius(165px);
-      border-width: 2px;
+      @include border-radius(5px);
+      border-width: 0px;
       width: 160px;
       height: 160px;
     }
@@ -137,7 +137,7 @@ ul#products li {
 
     a {
       border-color: lighten($c_blue, 30);
-      border-width: 2px;
+      border-width: 0px;
       padding: 30px 22px 30px 20px;
       float: none;
 
