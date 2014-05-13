@@ -2,9 +2,9 @@
 <div class="product-image">
   <%= link_to product_image(product), product %>
 </div>
-<%= link_to truncate(product.name, :length => 50), product, :class => 'product-name', :style => 'style="font-size:16px"', :title => product.name %>
+<%= link_to truncate(product.name, :length => 50), product, :class => 'product-name', :style => 'font-size:16px', :title => product.name %>
 <div class="product-sku">
   <%= product.sku %>
 </div>
-<b class="price selling hidden" style="font-size:16px; border-top: 1px solid #dbdbdb;"><%= product.display_price %></b>
+<b class="price selling" style="font-size:16px; border-top: 1px solid #dbdbdb;"><%= product.display_price %></b>
 </li>
